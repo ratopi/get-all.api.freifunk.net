@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # location of "master"
-directoryURL="https://raw.github.com/freifunk/api.freifunk.net/master/directory/directory.json"
+directoryURL="https://raw.github.com/freifunk/directory.api.freifunk.net/master/directory.json"
 
 # go to "my" directory
 cd "$( dirname "$0" )"
