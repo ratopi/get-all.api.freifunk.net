@@ -12,6 +12,8 @@ curl -k -o directory.json. "$directoryURL"  &&  mv directory.json. directory.jso
 # load state jsons
 grep ':' directory.json | sed -e 's:" *,::' -e 's:"::g' -e 's+:+ +' | sort | while read id url; do
 
+	echo "getting $id ..."
+
 	if curl -k -o "$id.json." "$url"; then
 
 		for n in $( seq 1 10 ); do
